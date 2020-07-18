@@ -1,7 +1,7 @@
--- Table Schema for CSV files
 
 
--- If tables already exist, drop them:
+
+-- Thank you for showing this Dan, much appreciated. If tables already exist, drop them:
 DROP TABLE dept_emp;
 DROP TABLE dept_manager;
 DROP TABLE departments;
@@ -78,7 +78,7 @@ CREATE TABLE "employees" (
 );
 
 
--- Add foreign keys to tables
+-- Add foreign keys to tables- thank you for your help with this Dan- much appreciated.
 
 ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
